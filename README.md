@@ -7,9 +7,9 @@ A simple security mechanism can cost hundreds of dollars these days and the you 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ## Prerequisites
 * Raspberry Pi Zero W
-![Pi Zero W](https://cdn.sparkfun.com//assets/parts/1/2/2/3/2/14277-01.jpg)
+![Pi Zero W](https://imgur.com/hYTxbHU)
 * MaxSonar USB Ultrasonic sensor
-![MaxSonar USB sensor](https://www.maxbotix.com/wp-content/uploads/2017/01/HRUSB-MaxSonar-EZ-Ultrasonic-Range-Finder-600x600.jpg)
+![MaxSonar USB sensor](https://imgur.com/ZSyAQko)
 * Raspberry Pi Zero W compatible camera
 ![Pi Camera](https://images-na.ssl-images-amazon.com/images/I/61e%2Byge0glL._SX466_.jpg)
 
