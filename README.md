@@ -15,8 +15,17 @@ These instructions will get you a copy of the project up and running on your loc
 
 Along with these items there is a need for an internet connection and connection cables.
 ## Installing
-Once you have obtained the necessary hardware to run the project you must start setting up your raspberry pi zero w. The very first thing that you must do to allow a raspberry pi to work is to put an operating system on it so that it can run. Use a microSD and put rasbian-lite or desktop on it. This project was done with python, flask, and html so there are a few packages to install to let it run. To begin the installation you must first update your raspberry pi this can be done with the commands below.
+Once you have obtained the necessary hardware to run the project you must start setting up your raspberry pi zero w. The very first thing that you must do to allow a raspberry pi to work is to put an operating system on it so that it can run. Use a microSD and put rasbian-lite or desktop on it. This project was done with python, flask, and html so there are a few packages that are needed to be on the raspberry pi to let it run. To begin the installation you must first update your raspberry pi this can be done with the commands below.
 ```
 sudo apt-get install update
 sudo apt-get install upgrade
 ```
+Once this is done your libraries will be up to date. So to continue installing the proper packages so that the project can run. If you have other means to get the respective packages that is fine too.
+```
+sudo apt-get install python
+sudo apt-get install python-flask
+sudo apt-get install python-serial
+sudo apt-get install python-picamera
+sudo apt-get install python-pil
+```
+After this is complete you should have the necessary installations on the raspberry pi to run the project.
