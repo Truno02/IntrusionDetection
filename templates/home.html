@@ -1,0 +1,124 @@
+<!DOCTYPE html>	
+<html class="h-100">
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">    
+		<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.0.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>	
+	</head>
+	<body class="h-100" style="background-color: #CDCDCD;">
+		<div class="container h-100 pt-5 pb-5">
+			<div class="row">
+				
+				<div class="col col-mid-8">
+					<div class="card shadow">
+						<h4 class="card-header text=center">Latest Intrusion - {{ latestImage }}</h4>
+						<div style="overflow: hidden;">
+							<img src="/static/pictures/{{ latestImage }}" style="max-width: 100%; max-height: 100%;">
+						</div>
+					</div>
+				</div>
+				
+				<div class="col col-mid-4">
+				
+					<div>
+						<div class="btn-group btn-group-lg" role="group">
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#settingsModal">Settings</button>
+							<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#helpModal">Help</button>
+						</div>
+						<a href="/logout" role="button" class="btn btn-danger btn-lg float-right">Logout</a>
+					</div>
+				
+					<div class="card shadow mt-1 mb-1" style="max-height:250px;">
+						<h4 class="card-header text=center">Intrusion Records (per day)</h4>
+						<div style="overflow:auto;">
+							{% for record in pastRecords %}
+							<div class="p-2 text-center mt-1 mb-1">
+								<a class="card-text" href="/static/logs/{{ record }}">{{ record }}</a>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+					
+					<div class="card shadow mt-1" style="max-height:250px;">
+						<h4 class="card-header text=center">Camera Records (per intrusion)</h4>
+						<div style="overflow:auto;">
+							{% for picture in pastPictures %}
+							<div class="p-2 text-center mt-1 mb-1">
+								<a class="card-text" href="/static/pictures/{{ picture }}">{{ picture }}</a>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="row">
+			
+				<div class="col col-12">
+					<div class="card shadow mt-3">
+						<h4 class="card-header text=center">Latest Intrusion Records - {{ latestRecord }}</h4>
+						<object data="static/logs/{{ latestRecord }}" style="height:200px;"></object>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+		
+		<div id="settingsModal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Settings</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form action="/changePass" method="POST">
+							<label>This will change your password</label>
+							<div class="input-group mb-3">
+								<input type="password" class="form-control" name="newPassword" placeholder="Password">
+								<div class="input-group-append">
+									<button class="btn btn-primary" type="submit">Change</button>
+								</div>
+							</div>
+						</form>
+						<form action="/changeDoor" method="POST">
+							<label>This will change the anticipated door width in mm</label>
+							<div class="input-group mb-3">
+								<input type="number" class="form-control" name="newSize" placeholder="Place the width of your door in mm" value="{{ doorSize }}">
+								<div class="input-group-append">
+									<button class="btn btn-primary" type="submit">Change</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="helpModal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Help</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						This server keeps track of all detected intrusions and records them. There will be a picture of every single intrusion. If you are trying to find an intrusion that happened in the past it is possible to find it in the intrusion records. Thse records are created daily and also match up to the picture taken at the time.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

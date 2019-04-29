@@ -1,0 +1,27 @@
+<!DOCTYPE html>	
+<html class="h-100">
+	<head>
+		<title>Login</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">    
+		<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.0.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>	
+	</head>
+	<body class="h-100" style="background-color: #CDCDCD;">
+		<div class="container h-100">
+			<div class="row h-100">
+				<!-- Login Form -->
+				<div class="card shadow m-auto w-50 mt-5">
+					<h4 class="card-header text=center">Intrusion Detection System</h4>
+					{% if error %}
+					<div class="alert alert-danger mb-0" role="alert" style="border-radius:0;">Login failed.</div>
+					{% endif %}
+					<form class="m-5" action="/" method="POST">
+						<div class="form-group text-left">
+							<input type="password" class="form-control" name="password" placeholder="Password">
+							<small class="form-text text-muted">Please enter the password for your device.</small>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

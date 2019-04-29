@@ -1,0 +1,92 @@
+Intrusion - 2019-04-29 00:06:13.973416
+	picture: intruder20194290613.jpg
+	distance: 306mm away
+
+Intrusion - 2019-04-29 00:06:17.920640
+	picture: intruder20194290617.jpg
+	distance: 373mm away
+
+Intrusion - 2019-04-29 00:06:23.192576
+	picture: intruder20194290623.jpg
+	distance: 672mm away
+
+Intrusion - 2019-04-29 00:06:26.693179
+	picture: intruder20194290626.jpg
+	distance: 368mm away
+
+Intrusion - 2019-04-29 00:06:34.416678
+	picture: intruder20194290634.jpg
+	distance: 342mm away
+
+Intrusion - 2019-04-29 00:06:51.228503
+	picture: intruder20194290651.jpg
+	distance: 424mm away
+
+Intrusion - 2019-04-29 00:07:40.760037
+	picture: intruder20194290740.jpg
+	distance: 300mm away
+
+Intrusion - 2019-04-29 00:07:49.311875
+	picture: intruder20194290749.jpg
+	distance: 300mm away
+
+Intrusion - 2019-04-29 00:07:57.530683
+	picture: intruder20194290757.jpg
+	distance: 323mm away
+
+Intrusion - 2019-04-29 00:08:14.270142
+	picture: intruder20194290814.jpg
+	distance: 300mm away
+
+Intrusion - 2019-04-29 00:08:34.047356
+	picture: intruder20194290834.jpg
+	distance: 300mm away
+
+Intrusion - 2019-04-29 00:08:46.007681
+	picture: intruder20194290846.jpg
+	distance: 511mm away
+
+Intrusion - 2019-04-29 00:09:06.245514
+	picture: intruder2019429096.jpg
+	distance: 348mm away
+
+Intrusion - 2019-04-29 00:09:09.569993
+	picture: intruder2019429099.jpg
+	distance: 300mm away
+
+Intrusion - 2019-04-29 09:45:41.193054
+	picture: intruder201942994541.jpg
+	distance: 173mm away
+
+Intrusion - 2019-04-29 10:30:53.457634
+	picture: intruder2019429103053.jpg
+	distance: 173mm away
+
+Intrusion - 2019-04-29 11:39:38.360277
+	picture: intruder2019429113938.jpg
+	distance: 300mm away
+
+Intrusion - 2019-04-29 12:57:03.477098
+	picture: intruder201942912573.jpg
+	distance: 174mm away
+
+Intrusion - 2019-04-29 13:00:10.948965
+	picture: intruder201942913010.jpg
+	distance: 174mm away
+
+Intrusion - 2019-04-29 14:07:50.504947
+	picture: intruder201942914750.jpg
+	distance: 300mm away
+
+Intrusion - 2019-04-29 14:07:55.749869
+	picture: intruder201942914755.jpg
+	distance: 300mm away
+
+Intrusion - 2019-04-29 15:18:22.919232
+	picture: intruder2019429151822.jpg
+	distance: 300mm away
+
+Intrusion - 2019-04-29 15:18:36.560989
+	picture: intruder2019429151836.jpg
+	distance: 300mm away
+
