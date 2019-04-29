@@ -28,4 +28,11 @@ sudo apt-get install python-serial
 sudo apt-get install python-picamera
 sudo apt-get install python-pil
 ```
-After this is complete you should have the necessary installations on the raspberry pi to run the project.
+After this is complete you should have the necessary installations on the raspberry pi to run the project. So, next is to place the files on the raspberry pi. Personally I use filezilla but place all of the Intrusion Detection files on to the Raspberry Pi. The location can vary but you may need to change global variables 'picturePath' and 'logPath' to correspondingly match the location. For basic use just keep the files in raspberry pi root.
+
+*NOTE: you will need to edit the configuration of the Raspberry Pi to allow the camera to be used. This can be done by entering 'raspi-config' in the command line and then finding the camera under interface options.
+
+## Assembly
+Now that all the corresponging software is installed you can start assembling the device together.
+The final result should look similar to the image below.
+![Full Assembly](https://i.imgur.com/HT9Xe3I.png)
