@@ -8,8 +8,8 @@ These instructions will get you a copy of the project up and running on your loc
 ## Prerequisites
 * Raspberry Pi Zero W
 ![Pi Zero W](https://i.imgur.com/hYTxbHU.png)
-* MaxSonar USB Ultrasonic sensor
-![MaxSonar USB sensor](https://i.imgur.com/ZSyAQko.png)
+* MaxBotix USB Ultrasonic sensor
+![MaxBotic=x USB sensor](https://i.imgur.com/ZSyAQko.png)
 * Raspberry Pi Zero W compatible camera
 ![Pi Camera](https://i.imgur.com/HT9Xe3I.png)
 
@@ -30,9 +30,11 @@ sudo apt-get install python-pil
 ```
 After this is complete you should have the necessary installations on the raspberry pi to run the project. So, next is to place the files on the raspberry pi. Personally I use filezilla but place all of the Intrusion Detection files on to the Raspberry Pi. The location can vary but you may need to change global variables 'picturePath' and 'logPath' to correspondingly match the location. For basic use just keep the files in raspberry pi root.
 
-*NOTE: you will need to edit the configuration of the Raspberry Pi to allow the camera to be used. This can be done by entering 'raspi-config' in the command line and then finding the camera under interface options.
+*NOTE: you will need to edit the configuration of the Raspberry Pi to allow the camera to be used. This can be done by entering 'raspi-config' in the command line and then finding the camera under interface options. The Wifi for the Raspberry Pi Zero W can also be set up here.
 
 ## Assembly
 Now that all the corresponging software is installed you can start assembling the device together.
 The final result should look similar to the image below.
-![Full Assembly](https://i.imgur.com/HT9Xe3I.png)
+![Full Assembly](https://i.imgur.com/eLpMkKJ.jpg)
+
+The MaxBotix ultrasonic sensor should be connected to the available usb on the Raspberry Pi Zero W, there will need to a usb to microUSB converter to allow the maxBotix ultrasonic sensor to work with the Raaspberry Pi. In the case shown, we are using the on-chip Wifi from the Raspberry Pi Zero W. This was configured in the 'raspi-config' interface. Also the camera must be connected at the bottom with a ribbon cable.
