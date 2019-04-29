@@ -38,3 +38,24 @@ The final result should look similar to the image below.
 ![Full Assembly](https://i.imgur.com/eLpMkKJ.jpg)
 
 The MaxBotix ultrasonic sensor should be connected to the available usb on the Raspberry Pi Zero W, there will need to a usb to microUSB converter to allow the maxBotix ultrasonic sensor to work with the Raaspberry Pi. In the case shown, we are using the on-chip Wifi from the Raspberry Pi Zero W. This was configured in the 'raspi-config' interface. Also the camera must be connected at the bottom with a ribbon cable.
+
+### Running the Tests
+Making sure that the raspberry pi has a connection to the internet source that you are on and it has power we can finally initialize the product. If you are unsure of how to connect to the Raspberry Pi at this point you can use PuTTY, and as long as you are on the same internet source as your Pi you can establish a connection by using the ip-address of the Raspberry Pi. Now go to where the files are located and then run the command below to start the program.
+
+```
+sudo python intrusionDetection.py
+```
+
+Once this command has been run it will start a python flask local webserver that is able to be accessed by units on the same local network. Direct yourself to the local webserver by entering the addess 'http://yourRaspberryPiIP:5000' once you connect to this server you can view the information of the intruders that your sensor has picked up. The webserver login should look like the image below.
+
+![webServer](https://i.imgur.com/O3a0SkK.png)
+
+Once you are on this login page uses the default password that is located in the global variables on the 'intrusionDetection.py' file. You can change this to whatever sort of password that you would like, it will be your password for the site.
+
+Now please log in and now every single time the sensor detects an intruder within the range decided it will take a picture and log it on the site. If you want more or less range also on the detection you can adjust that along with the password on the webserver.
+
+![webServer](https://i.imgur.com/N2XHV7f.png)
+
+#### Authors
+* Trenton Bruno
+* Ludovic Tabondjou
