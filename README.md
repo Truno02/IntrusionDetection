@@ -1,4 +1,4 @@
-# IntrusionDetection
+# Intrusion Detection
 Feel Unsafe? This prototype has got you covererd.
 
 A simple security mechanism can cost hundreds of dollars these days and the you are still not the one in full control over it. The Intrusion Detection System that was created is a prototype for veratile security. This detection system can be placed just about anywhere that you have internet. This system monitors an area using an ultrasonic sensor and when the user defined distance is intruded upon by an outsider a snapshot is then taken of the culprit. A log of all previous offenses are stored on a local server that you can acccess and view. This lets you not miss anything and even keep track of potentially repeat intruders.
