@@ -55,7 +55,9 @@ Once you are on this login page uses the default password that is located in the
 Now please log in and now every single time the sensor detects an intruder within the range decided it will take a picture and log it on the site. If you want more or less range also on the detection you can adjust that along with the password on the webserver.
 
 ![webServer](https://i.imgur.com/N2XHV7f.png)
-
-#### Authors
+#### Demo
+This is a demo below that demonstrates the Intrusion Detection project
+![demo](https://youtu.be/ZwJmNKYZX8k)
+##### Authors
 * Trenton Bruno
 * Ludovic Tabondjou
