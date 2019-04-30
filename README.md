@@ -57,7 +57,7 @@ Now please log in and now every single time the sensor detects an intruder withi
 ![webServer](https://i.imgur.com/N2XHV7f.png)
 #### Demo
 This is a demo below that demonstrates the Intrusion Detection project
-![demo](https://youtu.be/ZwJmNKYZX8k)
+[![DemoVideo](https://i.imgur.com/d7ivMBB.jpg)](https://youtu.be/ZwJmNKYZX8k)
 ##### Authors
 * Trenton Bruno
 * Ludovic Tabondjou
