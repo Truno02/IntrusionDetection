@@ -6,12 +6,9 @@ A simple security mechanism can cost hundreds of dollars these days and the you 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ## Prerequisites
-* Raspberry Pi Zero W
-* MaxBotix USB Ultrasonic sensor
-* Raspberry Pi Zero W compatible camera
-![MaxBotic=x USB sensor](https://i.imgur.com/ZSyAQko.png)
-![Pi Zero W](https://i.imgur.com/hYTxbHU.png)
-![Pi Camera](https://i.imgur.com/HT9Xe3I.png)
+* Raspberry Pi Zero W ![Pi Zero W](https://i.imgur.com/hYTxbHU.png){:height="150px" width="150px"}
+* MaxBotix USB Ultrasonic sensor ![MaxBotic=x USB sensor](https://i.imgur.com/ZSyAQko.png){:height="150px" width="150px"}
+* Raspberry Pi Zero W compatible camera ![Pi Camera](https://i.imgur.com/HT9Xe3I.png){:height="150px" width="150px"}
 
 Along with these items there is a need for an internet connection and connection cables.
 ## Installing
